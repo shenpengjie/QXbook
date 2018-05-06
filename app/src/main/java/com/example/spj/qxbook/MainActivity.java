@@ -47,7 +47,10 @@ public class MainActivity extends AppCompatActivity {
                         editor.putString("password",password);
                     }else editor.clear();
                     editor.apply();
-                    Toast.makeText(MainActivity.this,"登陆成功！",Toast.LENGTH_LONG).show();
+                    Intent intent=new Intent();
+                    intent.setClass(MainActivity.this,MainPager.class);
+                    startActivity(intent);
+                    Toast.makeText(MainActivity.this,"登陆成功！",Toast.LENGTH_SHORT).show();
                 }
             }
         });
