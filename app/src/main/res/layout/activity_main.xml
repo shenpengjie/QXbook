@@ -17,7 +17,7 @@
         android:layout_gravity="center"
         android:layout_width="54dp"
         android:layout_height="54dp"
-        android:background="@mipmap/ic_launcher"/>
+        android:background="@mipmap/profilepicture"/>
     <TextView
         android:layout_below="@+id/logoimage"
         android:layout_width="wrap_content"
