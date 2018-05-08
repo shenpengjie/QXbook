@@ -1,5 +1,6 @@
 package com.example.spj.qxbook;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -11,7 +12,7 @@ import android.view.WindowManager;
  * Created by spj on 2018/5/5.
  */
 
-public class LoadingActivity extends MainActivity{
+public class LoadingActivity extends Activity{
     private final long SPLASH_LENGTH = 2000;
     Handler handler = new Handler();
     public void onCreate(Bundle savedInstanceState) {

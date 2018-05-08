@@ -30,6 +30,12 @@ public class MainActivity extends AppCompatActivity {
         if(isRemember){
             String account =preferences.getString("account","");
             String password=preferences.getString("password","");
+            if(!account.equals("")&&!password.equals("")){
+                Intent intent=new Intent();
+                intent.setClass(MainActivity.this,MainPager.class);
+                startActivity(intent);
+                //this.finish();
+            }
             accountEdit.setText(account);
             passwordEdit.setText(password);
             rememberpassword.setChecked(true);
